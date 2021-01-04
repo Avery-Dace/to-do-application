@@ -7,7 +7,9 @@ const addHere =  document.getElementById("addHere");
 //add click function to button; save to local storage
 
 addHere.onclick = function (){
-const addBtn = addHere.value;  
+const addHere = addHere.value;  
 
 console.log(addHere);
 }
+
+addHere();
