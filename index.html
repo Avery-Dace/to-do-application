@@ -8,22 +8,27 @@
 <body>
 
     <h1>to-do</h1>
-
-    <!--Link form action to page-->
     
    <form action="index.html">
 
     <!--Create text box for the items to be input-->
     <!--Create an "ADD" button-->
+
         <p>to-do items
-            <input type="text" method="post">
-            <input id="clickMe" class=addButton type="submit" value="ADD">
+            <input id="itemBox" type="text" method="post" placeholder="Get To It :)">
+            <button id="addHere" type="button">ADD</button>
         </p>
     </form>
 
-    <!--Create item and checkbox - to be rendered with .js-->
-    <!--checkbox on right side will function as a "delete" button in .js-->
-    <input type="checkbox" name="completed" value="item"></input> item 1 <input type="checkbox" name="delete" value="remove" checked="checked">
+    <div id="fullList">
+        <ul id="itemList"></ul>
+    </div>
+
+
+    <!--*visual aid* lefthand check box will strikthrough with .js -->
+    <!--*visual aid* righthand check box will function as "delete" button in .js-->
+    <input type="checkbox" name="completed" value="item"></input> item 1 <input id="delete" type="checkbox" value="remove" checked="checked">
     
+    <script src="script.js"></script>
 </body>
 </html>
