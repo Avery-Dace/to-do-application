@@ -1,15 +1,30 @@
 //assign var to input
-//assign var to button
+//assign var to buttons
 
-const itemBOX = document.getElementById("itemBox");
-const addHere =  document.getElementById("addHere");
+const input = document.getElementById("itemBox");
+const list = document.getElementById("itemList");
+const submitBtn =  document.getElementById("addHere");
+const completeBtn = document.getElementById("complete");
+const deleteBtn = document.getElementById("delete");
 
-//add click function to button; save to local storage
+//add click function to all buttons
+submitBtn.addEventListener('click',addTask);
+completeBtn.addEventListener('click',lineThroughTask);
+deleteBtn.addEventListener('click',removeTask);
 
-addHere.onclick = function (){
-const addHere = addHere.value;  
+//write functions for event listeners
+//create element on the page - visible on browswer after being entered
+function addTask (){
+   
+}//take information from input and display in browser
 
-console.log(addHere);
+function lineThroughTask(){
+
 }
 
-addHere();
+function removeTask(){
+
+}
+//element should be appearing from the list
+//need to delete unwanted items
+//need to strike through completed items
