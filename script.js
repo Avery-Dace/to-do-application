@@ -1,26 +1,27 @@
 //assign var to input
 //assign var to buttons
 
-const input = document.getElementById("itemBox");
-const list = document.getElementById("itemList");
 const submitBtn =  document.getElementById("addHere");
-const completeBtn = document.getElementById("complete");
-const deleteBtn = document.getElementById("delete");
+const input = document.getElementById("itemBox");
+const list = document.querySelector("itemList");
 
-//add click function to all buttons
+//event listeners for buttons
 submitBtn.addEventListener('click',addTask);
-completeBtn.addEventListener('click',lineThroughTask);
-deleteBtn.addEventListener('click',removeTask);
+list.addEventListener('click',lineThroughTask);
+list.addEventListener('click',removeTask);
 
-//write functions for event listeners
+
 //create element on the page - visible on browswer after being entered
 function addTask (){
-   
-}//take information from input and display in browser
+const input = document.createElement("itemList");
+document.createTextNode(input.value);
+list.appendChild("");
+var x = document.createElement("list");
+x.setAttribute("type", "checkbox");
+}
 
 function lineThroughTask(){
 
-}
 
 function removeTask(){
 
