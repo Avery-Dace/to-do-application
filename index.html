@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todo list</title>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+    <div class= "containter">
 
-    <h1>to-do</h1>
-    
-   <form action="index.html">
-        <p>to-do items
-            <input id="itemBox" type="text" method="post" placeholder="Get To It :)">
-            <button id="addHere" type="button">ADD</button>
-        </p>
-    </form>
+        <div class="header"> <!-- make this the footer -->
+            <div class="clear">
 
-    <div class="fullList">
+                <i class="refresh"></i>
 
-        <ul id="itemList"></ul>
-        
+            </div>
+
     </div>
 
+<div class="content">
+
+    <ul id="list">
+        <li class="item">
+            <i class="completeCircle"></i>
+            <p class="text">say Hello</p>
+            <i class="deleteCircle"></i>
+        </li>
     
+    </ul>
+
+    <div class="addItem">
+            <i class="addButton"></i>
+            <input tpe="text" id="input" placeholder="add item"></input> 
+        </div>
+    </div>
+</div>
+
+        <!--CSS/ make header - black header, light blue font-color - -->
+    </header> 
+
+    <h1>to do</h1>
+
+    <div id="containter">
+        <!--CSS/ rounded border - look like a card-->
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

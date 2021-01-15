@@ -1,31 +1,60 @@
-//assign var to input
-//assign var to buttons
+const clear = document.querySelector(".clear");
+const list = document.getElementById("list");
+const check = "completeCircle";
+const uncheck = "completeCircle";
+const lineThru = "crossOut"
 
-const submitBtn =  document.getElementById("addHere");
-const input = document.getElementById("itemBox");
-const list = document.querySelector("itemList");
+function addItem(toDo,id,done ){
 
-//event listeners for buttons
-submitBtn.addEventListener('click',addTask);
-list.addEventListener('click',lineThroughTask);
+    const Done = done ? check : uncheck;
+    conse Line = done ? lineThru: "";
 
+    const text = `<li class="item">
+            <i class="completeCircle ${Done}" job="complete" id="${id}"></i>
+            <p class="text ${LINE}"> ${todo}</p>
+            <i class="deleteCircle" job="delete" id="${id}></i>
+    </li>`
 
+    const position = "beforeEnd";
+list.insertAdjacentElement(psition, text);
+    }
 
-//create element on the page - visible on browswer after being entered
-function addTask (){
-const input = document.createElement("itemList");
-localStorage.setItem(input,JSON.stringify(input.value));
-localStorage.getItem("itemList")
-document.createTextNode("itemList");
-JSON.parse(input.value);
+addToDo("Study"); 
 
+document.addEventListener("keyup", function(event)){
+if(event.keyCode == 13)
+const toDo= input.value;
+    if(toDo){
+        addToDo(toDo, id, false, false);
+        List.push(
+            {
+            name:toDo,
+            id: id,
+            done: false,
+            trash: false}
+        );
+        input.value ="";
+        id++;
+    }
 }
 
-function lineThroughTask(){
+let List = [];
+let id = 0;
 
+List =[{},{}, ...];
+
+List[0]
+{
+    name: "Avery",
+    id: 0,
+    done:false,
+    trash:false
 }
 
-
-//element should be appearing from the list
-//need to delete unwanted items
-//need to strike through 
+List[1]
+{
+    name: "Dace"
+    id:1,
+    done:true,
+    trash:false
+}
